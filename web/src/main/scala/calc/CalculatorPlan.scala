@@ -21,5 +21,6 @@ class CalculatorPlan extends Plan{
     <form action="/" method="post">
       <input type="text" name="q" value={q}/>
       <input type="submit"/>
-    </form>)
+    </form>
+  <footer>Version {BuildInfo.version}, built {BuildInfo.timestamp}</footer>)
 }
