@@ -1,10 +1,11 @@
-organization := "no.flatmap"
+organization in ThisBuild := "no.flatmap"
 
 name := "calculator"
 
-version := "0.1-SNAPSHOT"
+version in ThisBuild := "0.1-SNAPSHOT"
 
-scalaVersion := "2.11.0"
+scalaVersion in ThisBuild := "2.11.0"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.1.5" % "test"
+lazy val core = project
 
+lazy val web = project.dependsOn(core)
