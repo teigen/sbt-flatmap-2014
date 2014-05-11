@@ -3,8 +3,10 @@ libraryDependencies ++= Seq(
   "net.databinder" %% "unfiltered-jetty"  % "0.8.0"
 )
 
-BuildInfo.settings
+buildInfoSettings
 
-BuildInfo.buildInfoPackage := "calc"
+buildInfoPackage := "calc"
 
-sourceGenerators in Compile <+= BuildInfo.buildInfo
+buildInfoKeys += BuildInfoKey("timestamp", System.currentTimeMillis())
+
+sourceGenerators in Compile <+= buildInfo
