@@ -1,4 +1,4 @@
-# project plugins
+# sbt plugins
 
 ## [sbt-buildinfo](https://github.com/sbt/sbt-buildinfo)
 
