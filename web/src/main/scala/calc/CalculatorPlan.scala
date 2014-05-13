@@ -1,9 +1,8 @@
 package calc
 
-import unfiltered._
-import filter.Plan
-import request._
-import response._
+import unfiltered.filter.Plan
+import unfiltered.request.{ GET, Path, Params, POST, & }
+import unfiltered.response.{ BadRequest, Ok, Html5 }
 
 class CalculatorPlan extends Plan{
   def intent = {
